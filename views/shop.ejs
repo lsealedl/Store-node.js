@@ -7,9 +7,10 @@
 			<h1>My Products</h1>
 			<p>List of all products...</p>
 			<div class="grid">
+                <% for (let product of prods){%>
 				<article class="card product-item">
 					<header class="card__header">
-						<h1 class="produc__title">Javascript</h1>
+						<h1 class="produc__title"><%= product.title%></h1>
 					</header>
 					<div class="card__image">
 						<img
@@ -28,6 +29,7 @@
 						<div class="btn">Add to Cart</div>
 					</div>
 				</article>
+                <% }%>
 			</div>
 		</main>
 	</body>
